@@ -1,4 +1,19 @@
-export type SiteConfig = typeof siteConfig;
+import {
+  IconApps,
+  IconBrandBlogger,
+  IconBrandGithub,
+  IconBrandX,
+  IconCapProjecting,
+  IconCash,
+  IconCashOff,
+  IconExchange,
+  IconFrame,
+  IconHome,
+  IconMessageCircleCode,
+  IconNewSection,
+  IconTerminal2,
+  IconUser,
+} from "@tabler/icons-react";
 
 export const siteConfig = {
   name: "Next.js + NextUI",
@@ -7,22 +22,44 @@ export const siteConfig = {
     {
       label: "Home",
       href: "/",
+      icon: (
+        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Services",
+      href: "/services",
+      icon: (
+        <IconApps className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
     },
     {
       label: "Pricing",
       href: "/pricing",
+      icon: (
+        <IconCash className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
     },
     {
       label: "Blog",
       href: "/blog",
+      icon: (
+        <IconBrandBlogger className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
     },
     {
-      label: "About",
-      href: "/about",
+      label: "Projects",
+      href: "/projects",
+      icon: (
+        <IconFrame className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+    },
+    {
+      label: "Contact",
+      href: "/contact",
+      icon: (
+        <IconMessageCircleCode className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
     },
   ],
   navMenuItems: [
