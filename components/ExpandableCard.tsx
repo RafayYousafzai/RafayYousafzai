@@ -7,7 +7,7 @@ import { useOutsideClick } from "@/hooks/use-outside-click";
 
 export function ExpandableCard() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
-    null,
+    null
   );
   const ref = useRef<HTMLDivElement>(null);
   const id = useId();
@@ -131,15 +131,15 @@ export function ExpandableCard() {
         {cards.map((card) => (
           <motion.div
             key={`card-${card.title}-${id}`}
-            className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+            className="p-4 flex flex-col sm:flex-row w-full justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
             layoutId={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
           >
-            <div className="flex gap-4 flex-col md:flex-row ">
+            <div className="flex w-full gap-4 flex-col sm:flex-row ">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <Image
-                  alt={card.title}
-                  className="h-40 w-40 md:h-14 md:w-14 rounded-lg object-cover object-top"
+                  alt={card.title} 
+                  className=" aspect-square w-full sm:h-14  rounded-lg object-cover object-top"
                   height={100}
                   src={card.src}
                   width={100}
@@ -147,13 +147,13 @@ export function ExpandableCard() {
               </motion.div>
               <div className="">
                 <motion.h3
-                  className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left"
+                  className="font-medium text-neutral-800 dark:text-neutral-200 text-center sm:text-left"
                   layoutId={`title-${card.title}-${id}`}
                 >
                   {card.title}
                 </motion.h3>
                 <motion.p
-                  className="text-neutral-600 dark:text-neutral-400 text-center md:text-left"
+                  className="text-neutral-600 dark:text-neutral-400 text-center sm:text-left"
                   layoutId={`description-${card.description}-${id}`}
                 >
                   {card.description}
