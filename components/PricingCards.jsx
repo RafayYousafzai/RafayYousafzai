@@ -5,46 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Switch } from "@nextui-org/switch";
 import { Button } from "@nextui-org/button";
 
-const tiers = [
-  {
-    name: "Startup",
-    monthlyPrice: 999,
-    yearlyPrice: 9990,
-    features: [
-      "Mobile App (iOS & Android)",
-      "Web App",
-      "Backend API",
-      "Basic Analytics",
-      "5 Admin Users",
-      "Basic Support",
-    ],
-  },
-  {
-    name: "Growth",
-    monthlyPrice: 2499,
-    yearlyPrice: 24990,
-    features: [
-      "All Startup features",
-      "Advanced Analytics",
-      "20 Admin Users",
-      "Priority Support",
-      "CI/CD Setup",
-      "Custom Branding",
-    ],
-  },
-  {
-    name: "Enterprise",
-    price: "Custom",
-    features: [
-      "All Growth features",
-      "Unlimited Admin Users",
-      "24/7 Dedicated Support",
-      "Custom Integrations",
-      "On-Premise Deployment Option",
-      "SLA Agreement",
-    ],
-  },
-];
+import { siteConfig } from "@/config/site";
 
 export default function Component() {
   const [isYearly, setIsYearly] = useState(false);
@@ -52,13 +13,13 @@ export default function Component() {
   return (
     <motion.div
       animate={{ opacity: 1 }}
-      className="max-w-6xl mx-auto px-4 py-8"
+      className="max-w-7xl mx-auto   py-8"
       initial={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
       <motion.h2
         animate={{ y: 0 }}
-        className="text-2xl font-bold text-center mb-4"
+        className="text-2xl  font-bold text-center mb-4"
         initial={{ y: -20 }}
         transition={{ duration: 0.5 }}
       >
@@ -82,7 +43,7 @@ export default function Component() {
         initial={{ opacity: 0, y: 20 }}
         transition={{ delay: 0.4, duration: 0.5 }}
       >
-        {tiers.map((tier, index) => (
+        {siteConfig.tiers.map((tier, index) => (
           <motion.div
             key={tier.name}
             animate={{ opacity: 1, y: 0 }}

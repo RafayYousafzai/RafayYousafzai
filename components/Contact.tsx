@@ -39,9 +39,9 @@ export default function Contact() {
   };
 
   return (
-    <div className="  flex items-center justify-center bg-gradient-to-br    ">
-      <div className="w-full max-w-lg bg-opacity-80 backdrop-blur-lg    p-3  space-y-8 relative overflow-hidden">
-        <div className="absolute inset-0  opacity-10" />
+    <div className="  flex items-center justify-center bg-gradient-to-br  w-full   ">
+      <div className="w-full max-w-2xl bg-opacity-80 backdrop-blur-lg    p-3  space-y-8 relative overflow-hidden">
+        <div className="absolute inset-0 w-full opacity-10" />
         <motion.div
           animate="visible"
           className="space-y-2 text-center relative z-10"
@@ -67,6 +67,7 @@ export default function Contact() {
                 whileTap={{ scale: 0.98 }}
               >
                 <Input
+                  fullWidth
                   required
                   className="w-full py-1 rounded-lg border  border-transparent transition duration-200 ease-in-out"
                   id="name"
@@ -81,6 +82,7 @@ export default function Contact() {
                 whileTap={{ scale: 0.98 }}
               >
                 <Input
+                  fullWidth
                   required
                   className="w-full py-1 rounded-lg border  border-transparent transition duration-200 ease-in-out"
                   id="email"
@@ -96,6 +98,7 @@ export default function Contact() {
                 whileTap={{ scale: 0.98 }}
               >
                 <Input
+                  fullWidth
                   required
                   className="w-full py-1 rounded-lg border  border-transparent transition duration-200 ease-in-out"
                   id="subject"
