@@ -1,12 +1,16 @@
 "use client";
 
 import React, { useState } from "react";
-import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import { Input } from "@nextui-org/input";
 import { Button } from "@nextui-org/button";
 import { addDoc, collection } from "firebase/firestore";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import dynamic from "next/dynamic";
+
+const ReactQuill = dynamic(() => import("react-quill"), {
+  ssr: false,
+});
 
 import FileUpload from "@/components/ui/file-upload";
 import { db, storage } from "@/lib/firebase/config";

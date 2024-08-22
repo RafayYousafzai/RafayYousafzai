@@ -43,9 +43,7 @@ const FileUpload = ({ onChange }: { onChange?: (files: File[]) => void }) => {
     multiple: false,
     noClick: true,
     onDrop: handleFileChange,
-    onDropRejected: (error) => {
-      console.log(error);
-    },
+    onDropRejected: (_error) => {},
   });
 
   return (

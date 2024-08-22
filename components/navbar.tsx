@@ -6,16 +6,11 @@ import {
 } from "@nextui-org/navbar";
 import { Link } from "@nextui-org/link";
 import NextLink from "next/link";
+import { IconBrandFiverr, IconBrandLinkedin } from "@tabler/icons-react";
 
+import { GithubIcon } from "@/components/icons";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import { TwitterIcon, GithubIcon, DiscordIcon } from "@/components/icons";
-import {
-  IconBrandFacebook,
-  IconBrandFiverr,
-  IconBrandInstagram,
-  IconBrandLinkedin,
-} from "@tabler/icons-react";
 
 export const Navbar = () => {
   return (

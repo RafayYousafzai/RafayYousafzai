@@ -12,8 +12,6 @@ export default function Component(params) {
 
   const blog = blogs.filter((blog) => blog.id === params.params.id)[0];
 
-  console.log(blog);
-
   return (
     <div className="max-w-3xl mx-auto px-4 py-8 ">
       <Link

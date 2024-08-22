@@ -14,8 +14,11 @@ import {
 import Image from "next/image";
 
 import { db } from "@/lib/firebase/config";
+import { useFirebase } from "@/context/FirebaseContext";
 
-const PostList = ({ posts }) => {
+const PostList = () => {
+  const { blogs } = useFirebase();
+
   const [loading, setLoading] = useState(false);
 
   const handleDelete = async (postId) => {
@@ -42,7 +45,7 @@ const PostList = ({ posts }) => {
         <TableColumn>Action</TableColumn>
       </TableHeader>
       <TableBody emptyContent={"No rows to display."}>
-        {posts.map((post) => (
+        {blogs.map((post) => (
           <TableRow key={post?.id}>
             <TableCell>
               <Image height={50} src={post?.coverPhotoUrl} width={50} />

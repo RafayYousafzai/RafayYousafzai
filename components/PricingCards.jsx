@@ -4,9 +4,9 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Switch } from "@nextui-org/switch";
 import { Button } from "@nextui-org/button";
+import Link from "next/link";
 
 import { siteConfig } from "@/config/site";
-import Link from "next/link";
 
 export default function Component() {
   const [isYearly, setIsYearly] = useState(false);
