@@ -15,14 +15,13 @@ import Image from "next/image";
 
 import { db } from "@/lib/firebase/config";
 
-const PostList = ({ posts, onDelete }) => {
+const PostList = ({ posts }) => {
   const [loading, setLoading] = useState(false);
 
   const handleDelete = async (postId) => {
     try {
       setLoading(true);
       await deleteDoc(doc(db, "blogPosts", postId));
-      onDelete(postId);
     } catch (error) {
       alert("Error deleting post. Please try again.");
     } finally {
@@ -39,20 +38,22 @@ const PostList = ({ posts, onDelete }) => {
       <TableHeader>
         <TableColumn>Image</TableColumn>
         <TableColumn>Title</TableColumn>
+        <TableColumn>Description</TableColumn>
         <TableColumn>Action</TableColumn>
       </TableHeader>
       <TableBody emptyContent={"No rows to display."}>
         {posts.map((post) => (
-          <TableRow key={post.id}>
+          <TableRow key={post?.id}>
             <TableCell>
               <Image height={50} src={post?.coverPhotoUrl} width={50} />
             </TableCell>
-            <TableCell> {post.title}</TableCell>
+            <TableCell> {post?.title}</TableCell>
+            <TableCell> {post?.description}</TableCell>
             <TableCell>
               <Button
                 className="ml-4"
                 color="danger"
-                onClick={() => handleDelete(post.id)}
+                onClick={() => handleDelete(post?.id)}
               >
                 Delete
               </Button>

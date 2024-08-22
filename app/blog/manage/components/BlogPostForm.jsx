@@ -13,6 +13,7 @@ import { db, storage } from "@/lib/firebase/config";
 
 const BlogPostForm = () => {
   const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
   const [content, setContent] = useState("");
   const [file, setFile] = useState(null);
 
@@ -23,6 +24,7 @@ const BlogPostForm = () => {
   };
 
   const handleTitleChange = (e) => setTitle(e.target.value);
+  const handleDescriptionChange = (e) => setDescription(e.target.value);
 
   const handleContentChange = (value) => setContent(value);
 
@@ -48,7 +50,7 @@ const BlogPostForm = () => {
             async () => {
               coverPhotoUrl = await getDownloadURL(uploadTask.snapshot.ref);
               resolve();
-            },
+            }
           );
         });
       } catch (error) {
@@ -64,6 +66,7 @@ const BlogPostForm = () => {
         title,
         content,
         coverPhotoUrl,
+        description,
         createdAt: new Date(),
       });
 
@@ -97,6 +100,14 @@ const BlogPostForm = () => {
           type="text"
           value={title}
           onChange={handleTitleChange}
+        />
+        <Input
+          label=" Description "
+          placeholder="Enter your blog post summary"
+          type="text"
+          value={description}
+          onChange={handleDescriptionChange}
+          className="my-2"
         />
       </div>
       <div className="w-full max-w-4xl mx-auto min-h-96 border border-dashed bg-white dark:bg-neutral-900  border-neutral-200 dark:border-neutral-800 rounded-lg">

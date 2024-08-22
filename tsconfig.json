@@ -29,6 +29,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "config/site.js"
-  ],
+, "components/BlogsCard.tsx"  ],
   "exclude": ["node_modules"]
 }

@@ -79,7 +79,7 @@ const FileUpload = ({ onChange }: { onChange?: (files: File[]) => void }) => {
                   key={"file" + idx}
                   className={cn(
                     "relative overflow-hidden z-40 bg-white dark:bg-neutral-900 flex flex-col items-start justify-start md:h-24 p-4 mt-4 w-full mx-auto rounded-md",
-                    "shadow-sm"
+                    "shadow-sm",
                   )}
                   layoutId={idx === 0 ? "file-upload" : "file-upload-" + idx}
                 >
@@ -127,7 +127,7 @@ const FileUpload = ({ onChange }: { onChange?: (files: File[]) => void }) => {
               <motion.div
                 className={cn(
                   "relative group-hover/file:shadow-2xl z-40 bg-white dark:bg-neutral-900 flex items-center justify-center h-32 mt-4 w-full max-w-[8rem] mx-auto rounded-md",
-                  "shadow-[0px_10px_50px_rgba(0,0,0,0.1)]"
+                  "shadow-[0px_10px_50px_rgba(0,0,0,0.1)]",
                 )}
                 layoutId="file-upload"
                 transition={{
@@ -185,7 +185,7 @@ export function GridPattern() {
               }`}
             />
           );
-        })
+        }),
       )}
     </div>
   );
