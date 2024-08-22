@@ -1,7 +1,8 @@
 "use client";
 
 import { Button } from "@nextui-org/button";
-import { IconArrowRight } from "@tabler/icons-react";
+import { IconView360 } from "@tabler/icons-react";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Hero() {
@@ -46,10 +47,16 @@ export default function Hero() {
               design, I turn ideas into reality in the world.
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button className="inline-flex items-center justify-center transform transition-transform duration-500 hover:scale-105">
-                View My Projects
-                <IconArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+              <Link
+                href={
+                  "https://drive.google.com/file/d/1bIEWVg1Ta_MNAAvoiP9AYzeGyU30eWN2/view?usp=sharing"
+                }
+              >
+                <Button className="inline-flex items-center justify-center transform transition-transform duration-500 hover:scale-105">
+                  My Resume
+                  <IconView360 className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
             </div>
           </div>
           <img

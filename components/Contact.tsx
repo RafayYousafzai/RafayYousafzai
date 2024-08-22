@@ -5,13 +5,30 @@ import { motion } from "framer-motion";
 import { Input, Textarea } from "@nextui-org/input";
 import { Button } from "@nextui-org/button";
 import { IconCheck, IconSend } from "@tabler/icons-react";
+import emailjs from "emailjs-com";
 
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
+
+    emailjs
+      .sendForm(
+        "service_tyz3gpg", // Replace with your EmailJS service ID
+        "template_dn91oge", // Replace with your EmailJS template ID
+        e.target,
+        "MLHM2vfEVuIMaAkil" // Replace with your EmailJS user ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setIsSubmitted(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   const formVariants = {
@@ -39,8 +56,8 @@ export default function Contact() {
   };
 
   return (
-    <div className="  flex items-center justify-center bg-gradient-to-br  w-full   ">
-      <div className="w-full max-w-2xl bg-opacity-80 backdrop-blur-lg    p-3  space-y-8 relative overflow-hidden">
+    <div className="flex items-center justify-center bg-gradient-to-br w-full">
+      <div className="w-full max-w-2xl bg-opacity-80 backdrop-blur-lg p-3 space-y-8 relative overflow-hidden">
         <div className="absolute inset-0 w-full opacity-10" />
         <motion.div
           animate="visible"
@@ -48,7 +65,7 @@ export default function Contact() {
           initial="hidden"
           variants={formVariants}
         >
-          <motion.p className="text-gray-600" variants={childVariants}>
+          <motion.p variants={childVariants}>
             We do love to hear from you. Send us a message!
           </motion.p>
         </motion.div>
@@ -69,8 +86,9 @@ export default function Contact() {
                 <Input
                   fullWidth
                   required
-                  className="w-full py-1 rounded-lg border  border-transparent transition duration-200 ease-in-out"
+                  className="w-full py-1 rounded-lg border border-transparent transition duration-200 ease-in-out"
                   id="name"
+                  name="name"
                   placeholder="Your name"
                   size="lg"
                 />
@@ -84,8 +102,9 @@ export default function Contact() {
                 <Input
                   fullWidth
                   required
-                  className="w-full py-1 rounded-lg border  border-transparent transition duration-200 ease-in-out"
+                  className="w-full py-1 rounded-lg border border-transparent transition duration-200 ease-in-out"
                   id="email"
+                  name="email"
                   placeholder="Your email"
                   size="lg"
                   type="email"
@@ -100,8 +119,9 @@ export default function Contact() {
                 <Input
                   fullWidth
                   required
-                  className="w-full py-1 rounded-lg border  border-transparent transition duration-200 ease-in-out"
+                  className="w-full py-1 rounded-lg border border-transparent transition duration-200 ease-in-out"
                   id="subject"
+                  name="subject"
                   placeholder="Message subject"
                   size="lg"
                 />
@@ -114,8 +134,9 @@ export default function Contact() {
               >
                 <Textarea
                   required
-                  className="w-full py-1 rounded-lg border  border-transparent transition duration-200 ease-in-out min-h-[100px]"
+                  className="w-full py-1 rounded-lg border border-transparent transition duration-200 ease-in-out min-h-[100px]"
                   id="message"
+                  name="message"
                   placeholder="Your message"
                 />
               </motion.div>
@@ -142,8 +163,8 @@ export default function Contact() {
             transition={{ type: "spring", stiffness: 100, damping: 15 }}
           >
             <IconCheck className="mx-auto h-16 w-16 text-green-500" />
-            <h3 className="text-2xl font-semibold text-gray-800">Thank You!</h3>
-            <p className="text-gray-600">
+            <h3 className="text-2xl font-semibold  ">Thank You!</h3>
+            <p className=" ">
               Your message has been sent successfully. We will get back to you
               soon.
             </p>

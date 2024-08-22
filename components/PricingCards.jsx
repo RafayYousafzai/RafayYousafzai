@@ -6,6 +6,7 @@ import { Switch } from "@nextui-org/switch";
 import { Button } from "@nextui-org/button";
 
 import { siteConfig } from "@/config/site";
+import Link from "next/link";
 
 export default function Component() {
   const [isYearly, setIsYearly] = useState(false);
@@ -85,9 +86,11 @@ export default function Component() {
               ))}
             </ul>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button className="w-full">
-                {tier.price === "Custom" ? "Contact Us" : "Get Started"}
-              </Button>
+              <Link href="contact">
+                <Button className="w-full">
+                  {tier.price === "Custom" ? "Contact Us" : "Get Started"}
+                </Button>
+              </Link>
             </motion.div>
           </motion.div>
         ))}

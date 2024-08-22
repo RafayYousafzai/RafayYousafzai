@@ -10,6 +10,12 @@ import NextLink from "next/link";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { TwitterIcon, GithubIcon, DiscordIcon } from "@/components/icons";
+import {
+  IconBrandFacebook,
+  IconBrandFiverr,
+  IconBrandInstagram,
+  IconBrandLinkedin,
+} from "@tabler/icons-react";
 
 export const Navbar = () => {
   return (
@@ -27,13 +33,25 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
-          <Link isExternal aria-label="Twitter" href={siteConfig.links.twitter}>
-            <TwitterIcon className="text-default-500" />
+          <Link
+            isExternal
+            aria-label="Discord"
+            href="https://www.linkedin.com/in/rafay-yousafzai-177568260/"
+          >
+            <IconBrandLinkedin className="text-default-500" />
           </Link>
-          <Link isExternal aria-label="Discord" href={siteConfig.links.discord}>
-            <DiscordIcon className="text-default-500" />
+          <Link
+            isExternal
+            aria-label="Discord"
+            href="https://www.fiverr.com/rafay_yousafzai/"
+          >
+            <IconBrandFiverr className="text-default-500" />
           </Link>
-          <Link isExternal aria-label="Github" href={siteConfig.links.github}>
+          <Link
+            isExternal
+            aria-label="Github"
+            href="https://github.com/RafayYousafzai"
+          >
             <GithubIcon className="text-default-500" />
           </Link>
           <ThemeSwitch />
