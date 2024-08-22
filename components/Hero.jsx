@@ -65,7 +65,7 @@ export default function Hero() {
               loaded ? "scale-100" : "scale-0"
             }`}
             height="550"
-            src="https://plus.unsplash.com/premium_photo-1683121366070-5ceb7e007a97?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/me.png"
             width="550"
           />
         </div>
