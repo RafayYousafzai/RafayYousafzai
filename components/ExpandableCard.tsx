@@ -7,7 +7,7 @@ import { useOutsideClick } from "@/hooks/use-outside-click";
 
 export function ExpandableCard() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
-    null
+    null,
   );
   const ref = useRef<HTMLDivElement>(null);
   const id = useId();
@@ -138,7 +138,7 @@ export function ExpandableCard() {
             <div className="flex w-full gap-4 flex-col sm:flex-row ">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <Image
-                  alt={card.title} 
+                  alt={card.title}
                   className=" aspect-square w-full sm:h-14  rounded-lg object-cover object-top"
                   height={100}
                   src={card.src}
