@@ -8,8 +8,31 @@ module.exports = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            h1: {
+              fontSize: "2.5rem",
+              fontWeight: "bold",
+            },
+            h2: {
+              fontSize: "2rem",
+              fontWeight: "semibold",
+            },
+            h3: {
+              fontSize: "1.75rem",
+              fontWeight: "medium",
+            },
+            h4: {
+              fontSize: "1.5rem",
+              fontWeight: "medium",
+            },
+          },
+        },
+      },
+    },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [nextui(), require("@tailwindcss/typography")],
 };

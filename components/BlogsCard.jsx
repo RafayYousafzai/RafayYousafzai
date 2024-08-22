@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { useFirebase } from "@/context/FirebaseContext";
@@ -103,17 +104,19 @@ export function BlogsCard() {
                     </motion.h3>
                   </div>
 
-                  <motion.a
-                    layout
-                    animate={{ opacity: 1 }}
-                    className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white cursor-pointer"
-                    exit={{ opacity: 0 }}
-                    href={active.ctaLink}
-                    initial={{ opacity: 0 }}
-                    target="_blank"
-                  >
-                    Read
-                  </motion.a>
+                  <Link href={`blog/${active.id}`}>
+                    <motion.a
+                      layout
+                      animate={{ opacity: 1 }}
+                      className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white cursor-pointer"
+                      exit={{ opacity: 0 }}
+                      href={active.ctaLink}
+                      initial={{ opacity: 0 }}
+                      target="_blank"
+                    >
+                      Read
+                    </motion.a>
+                  </Link>
                 </div>
                 <div className="pt-4 relative px-4">
                   <motion.div
