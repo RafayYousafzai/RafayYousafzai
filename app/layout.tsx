@@ -38,7 +38,7 @@ export default function RootLayout({
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          fontSans.variable,
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
@@ -48,10 +48,7 @@ export default function RootLayout({
               {children}
             </main>
             <footer className="w-full  flex items-center justify-center py-3  fixed z-40 bottom-0 bg-transparent ">
-              <FloatingDock
-                items={siteConfig?.navItems}
-                mobileClassName="translate-y-20"
-              />
+              <FloatingDock className={""} items={siteConfig?.navItems} />
             </footer>
           </div>
         </Providers>
