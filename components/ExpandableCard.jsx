@@ -2,21 +2,24 @@
 import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Button, ButtonGroup } from "@nextui-org/button";
+import { IconBrandGoogleBigQuery } from "@tabler/icons-react";
+import { useRouter } from "next/navigation";
+
+import { GithubIcon } from "./icons";
 
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { useFirebase } from "@/context/FirebaseContext";
 
-export function BlogsCard() {
-  const { blogs } = useFirebase();
-
-  const [active, setActive] = useState<(typeof blogs)[number] | boolean | null>(
-    null
-  );
+export function ExpandableCard() {
+  const router = useRouter();
+  const { projects } = useFirebase();
+  const [active, setActive] = useState(null);
+  const ref = useRef(null);
   const id = useId();
-  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    function onKeyDown(event: KeyboardEvent) {
+    function onKeyDown(event) {
       if (event.key === "Escape") {
         setActive(false);
       }
@@ -35,7 +38,7 @@ export function BlogsCard() {
 
   useOutsideClick(ref, () => setActive(null));
 
-  function truncateString(str: string, maxLength: number) {
+  function truncateString(str, maxLength) {
     if (str.length > maxLength) {
       return str.slice(0, maxLength) + "...";
     }
@@ -98,23 +101,28 @@ export function BlogsCard() {
                 <div className="flex justify-between items-start p-4">
                   <div className="">
                     <motion.h3
-                      className="font-medium text-neutral-700 dark:text-neutral-200 text-base"
+                      className="font-bold text-neutral-700 dark:text-neutral-200"
                       layoutId={`title-${active.title}-${id}`}
                     >
-                      {truncateString(active.title, 15)}
+                      {active.title}
                     </motion.h3>
                   </div>
 
-                  <motion.a
-                    layout
-                    animate={{ opacity: 1 }}
-                    className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white cursor-pointer"
-                    exit={{ opacity: 0 }}
-                    href={active.ctaLink}
-                    initial={{ opacity: 0 }}
-                    target="_blank"
-                  >
-                    Read
+                  <motion.a layoutId={`button-${active.title}-${id}`}>
+                    <ButtonGroup>
+                      <Button
+                        isIconOnly
+                        onPress={() => router.push(active.github)}
+                      >
+                        <GithubIcon />
+                      </Button>
+                      <Button
+                        isIconOnly
+                        onPress={() => router.push(active.preview)}
+                      >
+                        <IconBrandGoogleBigQuery />
+                      </Button>
+                    </ButtonGroup>
                   </motion.a>
                 </div>
                 <div className="pt-4 relative px-4">
@@ -125,7 +133,9 @@ export function BlogsCard() {
                     exit={{ opacity: 0 }}
                     initial={{ opacity: 0 }}
                   >
-                    {active.description}
+                    {typeof active.content === "function"
+                      ? active.content()
+                      : active.description}
                   </motion.div>
                 </div>
               </div>
@@ -133,40 +143,50 @@ export function BlogsCard() {
           </div>
         ) : null}
       </AnimatePresence>
-      <ul className="max-w-2xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4">
-        {blogs &&
-          blogs.map((card) => (
+      <ul className="max-w-2xl mx-auto w-full gap-4">
+        {projects &&
+          projects.map((card) => (
             <motion.div
-              key={card.title}
-              className="p-4 flex flex-col  hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+              key={`card-${card.title}-${id}`}
+              className="p-4 flex flex-col sm:flex-row w-full justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
               layoutId={`card-${card.title}-${id}`}
               onClick={() => setActive(card)}
             >
-              <div className="flex gap-4 flex-col  w-full">
+              <div className="flex w-full gap-4 flex-col sm:flex-row ">
                 <motion.div layoutId={`image-${card.title}-${id}`}>
                   <Image
                     alt={card.title}
-                    className="h-60 w-full  rounded-lg object-cover object-top"
+                    className=" aspect-square w-full sm:h-14  rounded-lg object-cover object-top"
                     height={100}
                     src={card.coverPhotoUrl}
                     width={100}
                   />
                 </motion.div>
-                <div className="flex justify-center items-center flex-col">
+                <div className="">
                   <motion.h3
-                    className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left text-base"
+                    className="font-medium text-neutral-800 dark:text-neutral-200 text-center sm:text-left"
                     layoutId={`title-${card.title}-${id}`}
                   >
-                    {truncateString(card.title, 15)}
+                    {card.title}
                   </motion.h3>
                   <motion.p
-                    className="text-neutral-600 dark:text-neutral-400 text-center md:text-left text-base"
+                    className="text-neutral-600 dark:text-neutral-400 text-center sm:text-left"
                     layoutId={`description-${card.description}-${id}`}
                   >
                     {truncateString(card.description, 30)}
                   </motion.p>
                 </div>
               </div>
+              <motion.button layoutId={`button-${card.title}-${id}`}>
+                <ButtonGroup>
+                  <Button isIconOnly onPress={() => router.push(card.github)}>
+                    <GithubIcon />
+                  </Button>
+                  <Button isIconOnly onPress={() => router.push(card.preview)}>
+                    <IconBrandGoogleBigQuery />
+                  </Button>
+                </ButtonGroup>
+              </motion.button>
             </motion.div>
           ))}
       </ul>

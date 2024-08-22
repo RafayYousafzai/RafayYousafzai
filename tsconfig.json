@@ -28,7 +28,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "config/site.js"
-, "components/BlogsCard.tsx"  ],
+    "config/site.js",
+    "components/BlogsCard.jsx",
+    "components/ExpandableCard.jsx"
+  ],
   "exclude": ["node_modules"]
 }

@@ -50,7 +50,7 @@ const BlogPostForm = () => {
             async () => {
               coverPhotoUrl = await getDownloadURL(uploadTask.snapshot.ref);
               resolve();
-            }
+            },
           );
         });
       } catch (error) {
@@ -102,12 +102,12 @@ const BlogPostForm = () => {
           onChange={handleTitleChange}
         />
         <Input
+          className="my-2"
           label=" Description "
           placeholder="Enter your blog post summary"
           type="text"
           value={description}
           onChange={handleDescriptionChange}
-          className="my-2"
         />
       </div>
       <div className="w-full max-w-4xl mx-auto min-h-96 border border-dashed bg-white dark:bg-neutral-900  border-neutral-200 dark:border-neutral-800 rounded-lg">
