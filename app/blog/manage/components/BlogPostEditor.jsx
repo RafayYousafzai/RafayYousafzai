@@ -1,15 +1,15 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { collection, getDocs, query } from "firebase/firestore";
-
-import { db } from "../../../../lib/firebase/config";
 
 import BlogPostForm from "./BlogPostForm";
 import PostList from "./PostList";
 
+import { db } from "@/lib/firebase/config";
+
 const BlogPostEditor = () => {
-  const [posts, setPosts] = React.useState([]);
+  const [posts, setPosts] = useState([]);
 
   const fetchPosts = async () => {
     const q = query(collection(db, "blogPosts"));
@@ -22,7 +22,7 @@ const BlogPostEditor = () => {
     setPosts(postsArray);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     fetchPosts();
   }, []);
 
@@ -31,7 +31,7 @@ const BlogPostEditor = () => {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+    <div className="w-full max-w-4xl mx-auto p-6 bg-white dark:bg-neutral-900 shadow-lg rounded-lg">
       <h1 className="text-3xl font-bold text-center mb-6">
         Create a New Blog Post
       </h1>

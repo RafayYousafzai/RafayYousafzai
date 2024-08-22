@@ -2,7 +2,16 @@
 
 import React, { useState } from "react";
 import { doc, deleteDoc } from "firebase/firestore";
-import { Button } from "@nextui-org/button";
+import {
+  Table,
+  TableHeader,
+  TableColumn,
+  TableBody,
+  TableRow,
+  TableCell,
+  Button,
+} from "@nextui-org/react";
+import Image from "next/image";
 
 import { db } from "@/lib/firebase/config";
 
@@ -15,7 +24,6 @@ const PostList = ({ posts, onDelete }) => {
       await deleteDoc(doc(db, "blogPosts", postId));
       onDelete(postId);
     } catch (error) {
-      console.error("Error deleting post:", error);
       alert("Error deleting post. Please try again.");
     } finally {
       setLoading(false);
@@ -27,31 +35,32 @@ const PostList = ({ posts, onDelete }) => {
   }
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-6 bg-gray-100 shadow-lg rounded-lg">
-      {posts.length > 0 ? (
-        posts.map((post) => (
-          <div
-            key={post.id}
-            className="mb-6 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-          >
-            <div className="flex justify-between items-start">
-              <h1 className="text-2xl font-bold mb-4 text-gray-800">
-                {post.title}
-              </h1>
+    <Table className="mt-10">
+      <TableHeader>
+        <TableColumn>Image</TableColumn>
+        <TableColumn>Title</TableColumn>
+        <TableColumn>Action</TableColumn>
+      </TableHeader>
+      <TableBody emptyContent={"No rows to display."}>
+        {posts.map((post) => (
+          <TableRow key={post.id}>
+            <TableCell>
+              <Image height={50} src={post?.coverPhotoUrl} width={50} />
+            </TableCell>
+            <TableCell> {post.title}</TableCell>
+            <TableCell>
               <Button
                 className="ml-4"
-                color="error"
+                color="danger"
                 onClick={() => handleDelete(post.id)}
               >
                 Delete
               </Button>
-            </div>
-          </div>
-        ))
-      ) : (
-        <p className="text-center text-gray-500">No posts available.</p>
-      )}
-    </div>
+            </TableCell>
+          </TableRow>
+        ))}
+      </TableBody>
+    </Table>
   );
 };
 

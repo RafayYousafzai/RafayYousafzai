@@ -1,17 +1,26 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import { Input } from "@nextui-org/input";
 import { Button } from "@nextui-org/button";
 import { addDoc, collection } from "firebase/firestore";
+import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
-import { db } from "@/lib/firebase/config";
+import FileUpload from "@/components/ui/file-upload";
+import { db, storage } from "@/lib/firebase/config";
 
 const BlogPostForm = () => {
-  const [title, setTitle] = React.useState("");
-  const [content, setContent] = React.useState("");
+  const [title, setTitle] = useState("");
+  const [content, setContent] = useState("");
+  const [file, setFile] = useState(null);
+
+  const handleFileUpload = (files) => {
+    if (files.length > 0) {
+      setFile(files[0]);
+    }
+  };
 
   const handleTitleChange = (e) => setTitle(e.target.value);
 
@@ -24,19 +33,45 @@ const BlogPostForm = () => {
       return;
     }
 
+    let coverPhotoUrl = "";
+
+    if (file) {
+      const fileRef = ref(storage, `coverPhotos/${file.name}`);
+      const uploadTask = uploadBytesResumable(fileRef, file);
+
+      try {
+        await new Promise((resolve, reject) => {
+          uploadTask.on(
+            "state_changed",
+            null,
+            (error) => reject(error),
+            async () => {
+              coverPhotoUrl = await getDownloadURL(uploadTask.snapshot.ref);
+              resolve();
+            },
+          );
+        });
+      } catch (error) {
+        alert("Error uploading cover photo. Please try again.");
+
+        return;
+      }
+    }
+
     try {
       // Save blog post content to Firestore
       await addDoc(collection(db, "blogPosts"), {
         title,
         content,
+        coverPhotoUrl,
         createdAt: new Date(),
       });
 
       alert("Blog post saved successfully!");
       setTitle("");
       setContent("");
+      setFile(null);
     } catch (error) {
-      console.error("Error saving blog post:", error);
       alert("Error saving blog post. Please try again.");
     }
   };
@@ -62,6 +97,13 @@ const BlogPostForm = () => {
           type="text"
           value={title}
           onChange={handleTitleChange}
+        />
+      </div>
+      <div className="w-full max-w-4xl mx-auto min-h-96 border border-dashed bg-white dark:bg-neutral-900  border-neutral-200 dark:border-neutral-800 rounded-lg">
+        <FileUpload
+          accept="image/*"
+          multiple={false}
+          onChange={handleFileUpload}
         />
       </div>
       <div>
