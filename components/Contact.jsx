@@ -10,24 +10,21 @@ import emailjs from "emailjs-com";
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_tyz3gpg", // Replace with your EmailJS service ID
-        "template_dn91oge", // Replace with your EmailJS template ID
+        "service_tyz3gpg",
+        "template_dn91oge",
         e.target,
-        "MLHM2vfEVuIMaAkil" // Replace with your EmailJS user ID
+        "MLHM2vfEVuIMaAkil",
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        (_result) => {
           setIsSubmitted(true);
         },
-        (error) => {
-          console.log(error.text);
-        }
+        (_error) => {},
       );
   };
 
