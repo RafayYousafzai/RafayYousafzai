@@ -29,7 +29,7 @@ const FloatingDockDesktop = ({ items, className }) => {
     <motion.div
       className={cn(
         "mx-auto flex h-16 gap-4 items-end  rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
-        className
+        className,
       )}
       onMouseLeave={() => (!isMobile ? mouseX.set(Infinity) : null)}
       onMouseMove={(e) =>
@@ -59,7 +59,7 @@ function IconContainer({ mouseX, label, icon, href }) {
   let heightTransformIcon = useTransform(
     distance,
     [-150, 0, 150],
-    [20, 40, 20]
+    [20, 40, 20],
   );
 
   let width = useSpring(widthTransform, {
