@@ -8,8 +8,9 @@ import {
 } from "@tabler/icons-react";
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Rafay Khan",
+  description:
+    "Software Engineer | Full Stack Mobile App and Website Developer.",
   navItems: [
     {
       label: "Home",
@@ -258,10 +259,10 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/nextui-org/nextui",
-    twitter: "https://twitter.com/getnextui",
-    docs: "https://nextui.org",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    github: "https://github.com/RafayYousafzai",
+    facebook: "https://www.facebook.com/abdulrafay.khan.1804109/",
+    instagram: "https://www.instagram.com/rafay_yousafzai/",
+    fiverr: "https://www.fiverr.com/rafay_yousafzai/",
+    linkedin: "https://www.linkedin.com/in/rafay-yousafzai-177568260/",
   },
 };

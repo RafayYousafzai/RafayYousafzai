@@ -37,14 +37,14 @@ export const Navbar = () => {
           </Link>
           <Link
             isExternal
-            aria-label="Discord"
+            aria-label="Fiverr"
             href="https://www.fiverr.com/rafay_yousafzai/"
           >
             <IconBrandFiverr className="text-default-500" />
           </Link>
           <Link
             isExternal
-            aria-label="Discord"
+            aria-label="Linkedin"
             href="https://www.linkedin.com/in/rafay-yousafzai-177568260/"
           >
             <IconBrandLinkedin className="text-default-500" />
