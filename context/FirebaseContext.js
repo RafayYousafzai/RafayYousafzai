@@ -3,7 +3,7 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { collection, getFirestore, onSnapshot } from "firebase/firestore";
 
-import { app } from "@/lib/firebase/config"; // Adjust the import path to your Firebase configuration
+import { app } from "@/lib/firebase/config";
 
 const FirebaseContext = createContext();
 
