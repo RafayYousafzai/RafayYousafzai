@@ -8,6 +8,7 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
 import FloatingDock from "@/components/ui/floating-dock";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: {
@@ -34,7 +35,13 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <head />
+      <Head>
+        {/* Google Site Verification Meta Tag */}
+        <meta
+          name="google-site-verification"
+          content="t9njgnYp9iR49TipGQzDh34cK-8bLr7JPReA6vgZHQw"
+        />
+      </Head>
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
