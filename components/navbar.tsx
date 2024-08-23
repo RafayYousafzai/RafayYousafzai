@@ -30,10 +30,10 @@ export const Navbar = () => {
         <NavbarItem className="hidden sm:flex gap-2">
           <Link
             isExternal
-            aria-label="Discord"
-            href="https://www.linkedin.com/in/rafay-yousafzai-177568260/"
+            aria-label="Github"
+            href="https://github.com/RafayYousafzai"
           >
-            <IconBrandLinkedin className="text-default-500" />
+            <GithubIcon className="text-default-500" />
           </Link>
           <Link
             isExternal
@@ -44,10 +44,10 @@ export const Navbar = () => {
           </Link>
           <Link
             isExternal
-            aria-label="Github"
-            href="https://github.com/RafayYousafzai"
+            aria-label="Discord"
+            href="https://www.linkedin.com/in/rafay-yousafzai-177568260/"
           >
-            <GithubIcon className="text-default-500" />
+            <IconBrandLinkedin className="text-default-500" />
           </Link>
           <ThemeSwitch />
         </NavbarItem>

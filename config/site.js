@@ -19,8 +19,8 @@ export const siteConfig = {
       ),
     },
     {
-      label: "Services",
-      href: "/services",
+      label: "About",
+      href: "/about",
       icon: (
         <IconApps className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),

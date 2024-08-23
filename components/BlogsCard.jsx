@@ -104,7 +104,7 @@ export function BlogsCard() {
                     </motion.h3>
                   </div>
 
-                  <Link href={`blog/${active.id}`}>
+                  <Link target="_parent" href={`blog/${active.id}`}>
                     <motion.a
                       layout
                       animate={{ opacity: 1 }}

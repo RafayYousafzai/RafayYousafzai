@@ -25,7 +25,7 @@ export default function Component(params) {
         <div className="w-full flex justify-center  ">
           <Image
             alt="Blog post cover image"
-            className=" w-full  h-auto object-cover rounded-lg"
+            className=" w-full  h-auto object-cover rounded-lg animate-pulse bg-gray-500"
             height={200}
             src={blog?.coverPhotoUrl}
             width={200}

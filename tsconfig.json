@@ -30,7 +30,8 @@
     ".next/types/**/*.ts",
     "config/site.js",
     "components/BlogsCard.jsx",
-    "components/ExpandableCard.jsx"
-, "components/Contact.jsx"  ],
+    "components/ExpandableCard.jsx",
+    "components/Contact.jsx"
+  ],
   "exclude": ["node_modules"]
 }
