@@ -14,13 +14,13 @@ export default function Component() {
   return (
     <motion.div
       animate={{ opacity: 1 }}
-      className="max-w-7xl mx-auto   py-8"
+      className="max-w-7xl mx-auto py-8"
       initial={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
       <motion.h2
         animate={{ y: 0 }}
-        className="text-2xl  font-bold text-center mb-4"
+        className="text-2xl font-bold text-center mb-4"
         initial={{ y: -20 }}
         transition={{ duration: 0.5 }}
       >
@@ -34,7 +34,7 @@ export default function Component() {
         transition={{ delay: 0.2, duration: 0.5 }}
       >
         <span>Monthly</span>
-        <Switch checked={isYearly} onCheckedChange={setIsYearly} />
+        <Switch isSelected={isYearly} onValueChange={setIsYearly} />
         <span>Yearly (20% off)</span>
       </motion.div>
 
@@ -48,7 +48,7 @@ export default function Component() {
           <motion.div
             key={tier.name}
             animate={{ opacity: 1, y: 0 }}
-            className=" rounded-lg dark:bg-zinc-900   p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="rounded-lg dark:bg-zinc-900 p-6 shadow-lg hover:shadow-xl transition-shadow duration:300"
             initial={{ opacity: 0, y: 20 }}
             transition={{ delay: 0, duration: 0.5 }}
             whileHover={{ scale: 1.04 }}
@@ -63,9 +63,11 @@ export default function Component() {
                 initial={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.3 }}
               >
-                {tier.price
-                  ? tier.price
-                  : `$${isYearly ? tier.yearlyPrice / 100 : tier.monthlyPrice}${isYearly ? "/year" : "/month"}`}
+                {tier.price === "Custom"
+                  ? "Custom"
+                  : `$${isYearly ? tier.yearlyPrice : tier.monthlyPrice}${
+                      isYearly ? "/year" : "/month"
+                    }`}
               </motion.p>
             </AnimatePresence>
             <ul className="mb-6 space-y-2">

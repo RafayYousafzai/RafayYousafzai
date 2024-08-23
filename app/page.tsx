@@ -9,7 +9,6 @@ export default function Page() {
   return (
     <div className="w-full mb-20">
       <Hero />
-      {/* <FeaturesSection /> */}
       <h1 className={title()}>Services</h1>
       <Services />
       <h1 className={title()}>My Work</h1>

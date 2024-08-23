@@ -87,9 +87,9 @@ export function BlogsCard() {
                   priority
                   alt={active.title}
                   className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
-                  height={200}
+                  height={500}
                   src={active.coverPhotoUrl}
-                  width={200}
+                  width={500}
                 />
               </motion.div>
 
@@ -104,7 +104,7 @@ export function BlogsCard() {
                     </motion.h3>
                   </div>
 
-                  <Link target="_parent" href={`blog/${active.id}`}>
+                  <Link href={`blog/${active.id}`} target="_parent">
                     <motion.a
                       layout
                       animate={{ opacity: 1 }}
@@ -148,9 +148,9 @@ export function BlogsCard() {
                   <Image
                     alt={card.title}
                     className="h-60 w-full  rounded-lg object-cover object-top"
-                    height={100}
+                    height={500}
                     src={card.coverPhotoUrl}
-                    width={100}
+                    width={500}
                   />
                 </motion.div>
                 <div className="flex justify-center items-center flex-col">
