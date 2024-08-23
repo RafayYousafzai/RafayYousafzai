@@ -193,6 +193,7 @@ export default function PostForm({ project }) {
           <Button
             className="w-full my-6"
             disabled={loading}
+            isLoading={loading}
             size="md"
             type="submit"
           >

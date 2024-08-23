@@ -16,12 +16,17 @@ import Image from "next/image";
 import { db } from "@/lib/firebase/config";
 import { useFirebase } from "@/context/FirebaseContext";
 
-const PostList = () => {
+const PostList = ({ onEdit }) => {
   const { blogs } = useFirebase();
 
   const [loading, setLoading] = useState(false);
 
   const handleDelete = async (postId) => {
+    const isConfirmed = confirm(
+      "Are you sure you want to delete this post? This action cannot be undone.",
+    );
+
+    if (!isConfirmed) return;
     try {
       setLoading(true);
       await deleteDoc(doc(db, "blogPosts", postId));
@@ -53,6 +58,13 @@ const PostList = () => {
             <TableCell> {post?.title}</TableCell>
             <TableCell> {post?.description}</TableCell>
             <TableCell>
+              <Button
+                className="ml-4"
+                color="warning"
+                onPress={() => onEdit(post)}
+              >
+                Edit
+              </Button>
               <Button
                 className="ml-4"
                 color="danger"
