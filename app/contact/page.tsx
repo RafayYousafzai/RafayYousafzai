@@ -6,6 +6,7 @@ export default function ContactPage() {
     <div>
       <h1 className={title()}>Contact</h1>
       <Contact />
+      <div className="h-10" />
     </div>
   );
 }
