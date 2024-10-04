@@ -83,7 +83,7 @@ const BlogPostForm = ({ blog }) => {
             async () => {
               coverPhotoUrl = await getDownloadURL(uploadTask.snapshot.ref);
               resolve();
-            }
+            },
           );
         });
       } catch (error) {
