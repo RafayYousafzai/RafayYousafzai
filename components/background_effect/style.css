@@ -1,0 +1,1607 @@
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.particle-container {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+
+.particle:nth-child(1) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 11.715133417860018s;
+  animation-delay: -9.577705622844643s;
+  transform-origin: -20.98856046390015vw 13.588443082563629vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 55%;
+  left: 36%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(2) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 10.350692721471813s;
+  animation-delay: -7.543884159695037s;
+  transform-origin: -19.00905631709069vw 8.312643799221988vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 33%;
+  left: 79%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(3) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 10.50049930957144s;
+  animation-delay: -8.254055409589434s;
+  transform-origin: -13.156106093545194vw 22.275687811626923vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 88%;
+  left: 62%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(4) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 14.670739576709883s;
+  animation-delay: -5.676373573648114s;
+  transform-origin: -21.878817671802874vw 13.364021001939896vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 42%;
+  left: 99%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(5) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 14.6580180344143s;
+  animation-delay: -3.44812481609089s;
+  transform-origin: 22.7720029698811vw -0.5674260822578923vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 88%;
+  left: 98%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(6) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 10.764731300667506s;
+  animation-delay: -4.954913658573186s;
+  transform-origin: -2.059888682283649vw -18.00339812845665vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 48%;
+  left: 99%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(7) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 12.903778606475035s;
+  animation-delay: -13.30243623909397s;
+  transform-origin: -11.371337193467678vw -5.601753164808255vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 83%;
+  left: 94%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(8) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 10.73641777544973s;
+  animation-delay: -4.829540000451825s;
+  transform-origin: 17.60986256279852vw -9.402610184176375vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 52%;
+  left: 70%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(9) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 11.240572951181047s;
+  animation-delay: -0.710126462292473s;
+  transform-origin: 0.9854657242007967vw 9.31764334979254vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 24%;
+  left: 4%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(10) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 12.610575370542088s;
+  animation-delay: -4.058714737185579s;
+  transform-origin: -15.316742996768284vw -17.442194689390544vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 62%;
+  left: 56%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(11) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 11.374545659684411s;
+  animation-delay: -2.487975009173994s;
+  transform-origin: -24.930331569592646vw -24.93270536748987vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 91%;
+  left: 21%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(12) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 12.123180447236109s;
+  animation-delay: -11.734019951706976s;
+  transform-origin: 11.84582766877832vw 5.839967192384631vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 51%;
+  left: 38%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(13) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 12.111757126984749s;
+  animation-delay: -13.792090223758859s;
+  transform-origin: 15.12897783033501vw -23.456596537858545vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 50%;
+  left: 95%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(14) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 14.2196855990633s;
+  animation-delay: -6.346854422852894s;
+  transform-origin: 8.64818748328554vw -6.4286969832062155vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 94%;
+  left: 73%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(15) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 14.448293258355058s;
+  animation-delay: -10.253223077337585s;
+  transform-origin: -3.3917180349908875vw -17.42351710366338vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 24%;
+  left: 93%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(16) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 13.502497371895323s;
+  animation-delay: -9.346341245194665s;
+  transform-origin: -10.76622968091181vw -10.450079359360876vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 25%;
+  left: 89%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(17) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 14.039730681099595s;
+  animation-delay: -8.709893961306246s;
+  transform-origin: -10.064637147691046vw -9.984793787694457vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 18%;
+  left: 74%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(18) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 11.25276613837954s;
+  animation-delay: -5.435642548144559s;
+  transform-origin: 21.028208529875528vw -24.11601124546996vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 74%;
+  left: 62%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(19) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 12.412256214372384s;
+  animation-delay: -12.468425969878485s;
+  transform-origin: 2.9352255236158697vw 17.05578893009408vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 10%;
+  left: 5%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(20) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 14.107948410640192s;
+  animation-delay: -5.348958715140492s;
+  transform-origin: -14.411230404501163vw 20.821735446622036vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 31%;
+  left: 26%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(21) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 11.755318841233247s;
+  animation-delay: -0.9082444044419946s;
+  transform-origin: 23.810152330328883vw -10.880763872185284vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 62%;
+  left: 39%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(22) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 14.202497050216424s;
+  animation-delay: -1.165832207614269s;
+  transform-origin: 20.571614373751622vw 16.051406613463172vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 12%;
+  left: 90%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(23) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 14.802364251767719s;
+  animation-delay: -13.272639512557792s;
+  transform-origin: 15.156488748961905vw 20.472835186121493vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 34%;
+  left: 16%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(24) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 12.94350796689045s;
+  animation-delay: -7.0987303895536895s;
+  transform-origin: 7.456054020376612vw 16.93058036373167vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 32%;
+  left: 85%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(25) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 12.700393206354565s;
+  animation-delay: -12.460415690815605s;
+  transform-origin: -8.0161331192541vw 11.780847563601903vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 0%;
+  left: 85%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(26) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 11.409502367423647s;
+  animation-delay: -10.549194491594644s;
+  transform-origin: -22.988432868770047vw -12.411671918641265vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 59%;
+  left: 28%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(27) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 10.721330019960408s;
+  animation-delay: -13.70620700605754s;
+  transform-origin: 12.387737315426051vw -5.532519771458443vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 91%;
+  left: 61%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(28) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 10.862115232132105s;
+  animation-delay: -14.363569518277092s;
+  transform-origin: -9.202393659245601vw 6.72087091153535vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 39%;
+  left: 92%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(29) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 12.698113936064868s;
+  animation-delay: -12.73763308933316s;
+  transform-origin: -0.9153177940537489vw 10.898805176730534vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 4%;
+  left: 96%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(30) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 14.12603746835855s;
+  animation-delay: -6.675730940795875s;
+  transform-origin: -11.148048093111939vw -8.507845470540264vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 19%;
+  left: 14%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(31) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 13.961275137085712s;
+  animation-delay: -13.103896723032609s;
+  transform-origin: 24.13019498281505vw 14.190738939228098vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 23%;
+  left: 19%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(32) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 13.191348705491475s;
+  animation-delay: -1.201339110983195s;
+  transform-origin: -9.856616703008203vw 0.5967334414657373vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 22%;
+  left: 38%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(33) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 14.03207754687648s;
+  animation-delay: -2.965399547682689s;
+  transform-origin: 12.411172767209031vw -4.478663857442623vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 43%;
+  left: 35%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(34) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 13.625558941422547s;
+  animation-delay: -14.723723709380266s;
+  transform-origin: 15.382328912693119vw -7.923541150428161vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 62%;
+  left: 22%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(35) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 10.19692640699213s;
+  animation-delay: -7.851270515527746s;
+  transform-origin: -14.819921647278079vw 21.047057819949913vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 54%;
+  left: 98%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(36) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 10.42649530344834s;
+  animation-delay: -6.120403153398231s;
+  transform-origin: -23.06717363471694vw -4.925650187307042vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 78%;
+  left: 46%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.particle:nth-child(37) {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  animation-duration: 13.408082197997862s;
+  animation-delay: -6.670136434319581s;
+  transform-origin: -18.00249227130545vw -17.064592366960586vh;
+  animation-name: move;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      rgb(22, 14, 113) 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(
+      72.48deg,
+      rgb(239, 81, 109) 2.61%,
+      rgba(106, 103, 227, 0) 56.18%
+    ),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      rgb(121, 54, 174) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.655) 32.29%,
+      rgba(99, 175, 240, 0.396) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, rgb(52, 29, 101) 0.93%, rgb(96, 74, 234) 125.68%);
+  border-radius: 100%;
+  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
+    color;
+  filter: blur(84px);
+  top: 0%;
+  left: 67%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}

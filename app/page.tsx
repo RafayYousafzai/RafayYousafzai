@@ -4,10 +4,12 @@ import { ExpandableCard } from "@/components/ExpandableCard";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import { title } from "@/components/primitives";
+import BackgroundEffect from "@/components/background_effect/BackgroundEffect";
 
 export default function Page() {
   return (
     <div className="w-full mb-20">
+      <BackgroundEffect />
       <Hero />
       <h1 className={title()}>Services</h1>
       <Services />
