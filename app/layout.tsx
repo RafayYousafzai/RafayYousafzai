@@ -54,13 +54,15 @@ export default function RootLayout({
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="flex flex-col h-screen">
             <Navbar />
-            <AnimatedCursor
-              innerScale={5}
-              innerSize={13}
-              outerScale={5}
-              outerSize={18}
-              color="63, 55, 201"
-            />
+            <div className="hidden md:block">
+              <AnimatedCursor
+                color="63, 55, 201"
+                innerScale={5}
+                innerSize={13}
+                outerScale={5}
+                outerSize={18}
+              />
+            </div>
             <main className="w-full mx-auto max-w-7xl pt-16 px-6 flex-grow">
               {children}
             </main>
