@@ -49,7 +49,7 @@ export default function Hero() {
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Link
                 href={
-                  "https://drive.google.com/file/d/1bIEWVg1Ta_MNAAvoiP9AYzeGyU30eWN2/view?usp=sharing"
+                  "https://docs.google.com/document/d/1zkW9F-hHm1QM40myXIvIoJKdkGlIGTV9Le_zSiy2xR8/edit?usp=sharing"
                 }
               >
                 <Button className="inline-flex items-center justify-center transform transition-transform duration-500 hover:scale-105">
@@ -60,7 +60,7 @@ export default function Hero() {
             </div>
           </div>
           <img
-            alt="John Doe"
+            alt="Rafay Khan"
             className={`mx-auto aspect-square overflow-hidden rounded-full object-cover object-center sm:w-full lg:order-last transform transition-transform duration-1000 ${
               loaded ? "scale-100" : "scale-0"
             }`}

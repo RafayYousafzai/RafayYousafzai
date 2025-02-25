@@ -129,8 +129,8 @@ export const siteConfig = {
   tiers: [
     {
       name: "Startup",
-      monthlyPrice: 999,
-      yearlyPrice: 9990,
+      monthlyPrice: 300,
+      yearlyPrice: 2880,
       features: [
         "iOS & Android Mobile App",
         "Web Application",
@@ -142,8 +142,8 @@ export const siteConfig = {
     },
     {
       name: "Growth",
-      monthlyPrice: 2499,
-      yearlyPrice: 24990,
+      monthlyPrice: 799,
+      yearlyPrice: 7670,
       features: [
         "Includes all Startup features",
         "Advanced Analytics & Reporting",

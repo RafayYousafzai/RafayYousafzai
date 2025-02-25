@@ -4,6 +4,7 @@ import clsx from "clsx";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import AnimatedCursor from "react-animated-cursor";
 
 import { Providers } from "./providers";
 
@@ -47,12 +48,19 @@ export default function RootLayout({
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
+          fontSans.variable
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="flex flex-col h-screen">
             <Navbar />
+            <AnimatedCursor
+              innerScale={5}
+              innerSize={13}
+              outerScale={5}
+              outerSize={18}
+              color="63, 55, 201"
+            />
             <main className="w-full mx-auto max-w-7xl pt-16 px-6 flex-grow">
               {children}
             </main>

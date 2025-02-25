@@ -8,8 +8,10 @@ import BackgroundEffect from "@/components/background_effect/BackgroundEffect";
 
 export default function Page() {
   return (
-    <div className="w-full mb-20">
-      <BackgroundEffect />
+    <div className="w-full lg-20">
+      <div className="hidden md:block">
+        <BackgroundEffect />
+      </div>
       <Hero />
       <h1 className={title()}>Services</h1>
       <Services />
