@@ -6,7 +6,11 @@ import {
 } from "@nextui-org/navbar";
 import { Link } from "@nextui-org/link";
 import NextLink from "next/link";
-import { IconBrandFiverr, IconBrandLinkedin } from "@tabler/icons-react";
+import {
+  IconBrandFiverr,
+  IconBrandLinkedin,
+  IconBrandUpwork,
+} from "@tabler/icons-react";
 
 import { GithubIcon } from "@/components/icons";
 import { siteConfig } from "@/config/site";
@@ -48,6 +52,13 @@ export const Navbar = () => {
             href="https://www.linkedin.com/in/rafay-yousafzai-177568260/"
           >
             <IconBrandLinkedin className="text-default-500" />
+          </Link>
+          <Link
+            isExternal
+            aria-label="Upwork"
+            href="https://www.upwork.com/freelancers/~018bb05cec33b08ba4"
+          >
+            <IconBrandUpwork className="text-default-500" />
           </Link>
           <ThemeSwitch />
         </NavbarItem>

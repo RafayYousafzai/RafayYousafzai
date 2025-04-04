@@ -93,7 +93,7 @@ export const siteConfig = {
     {
       title: "Full-Stack Web Development",
       description:
-        "Scalable and responsive web applications using React.js, Next.js, and Firebase, delivering high-performance solutions.",
+        "Scalable and responsive web applications, delivering high-performance solutions.",
     },
     {
       title: "Cross-Platform Mobile Development",
@@ -103,7 +103,7 @@ export const siteConfig = {
     {
       title: "Backend Integration",
       description:
-        "Robust backend solutions with Firebase and Supabase, ensuring secure and efficient data handling.",
+        "Robust backend solutions with, ensuring secure and efficient data handling.",
     },
     {
       title: "Custom API Development",

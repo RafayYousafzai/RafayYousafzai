@@ -53,7 +53,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex items-center justify-center bg-gradient-to-br w-full">
+    <div className="flex items-center justify-center bg-gradient-to-br pb-20 w-full">
       <div className="w-full max-w-2xl bg-opacity-80 backdrop-blur-lg p-3 space-y-8 relative overflow-hidden">
         <div className="absolute inset-0 w-full opacity-10" />
         <motion.div

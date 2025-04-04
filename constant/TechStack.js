@@ -3,10 +3,9 @@ import {
   IconBrandReactNative,
 } from "@tabler/icons-react";
 import {
-  SiAdobexd,
   SiAmazon,
-  SiAngular,
   SiDocker,
+  SiExpress,
   SiFigma,
   SiFirebase,
   SiGit,
@@ -18,12 +17,9 @@ import {
   SiNextdotjs,
   SiNodedotjs,
   SiPostgresql,
-  SiPython,
   SiReact,
-  SiRedis,
   SiSupabase,
   SiTypescript,
-  SiVuedotjs,
 } from "react-icons/si";
 
 const technologies = [
@@ -43,23 +39,13 @@ const technologies = [
     category: "Frontend",
   },
   {
-    name: "React Native",
-    icon: <IconBrandReactNative className="w-8 h-8" />,
-    category: "Frontend",
-  },
-  {
     name: "Next.js",
     icon: <SiNextdotjs className="w-4 h-4" />,
     category: "Frontend",
   },
   {
-    name: "Vue.js",
-    icon: <SiVuedotjs className="w-4 h-4" />,
-    category: "Frontend",
-  },
-  {
-    name: "Angular",
-    icon: <SiAngular className="w-4 h-4" />,
+    name: "React Native",
+    icon: <IconBrandReactNative className="w-8 h-8" />,
     category: "Frontend",
   },
   {
@@ -68,8 +54,8 @@ const technologies = [
     category: "Backend",
   },
   {
-    name: "Python",
-    icon: <SiPython className="w-4 h-4" />,
+    name: "Express.js",
+    icon: <SiExpress className="w-4 h-4" />,
     category: "Backend",
   },
   {
@@ -85,11 +71,6 @@ const technologies = [
   {
     name: "MySQL",
     icon: <SiMysql className="w-4 h-4" />,
-    category: "Database",
-  },
-  {
-    name: "Redis",
-    icon: <SiRedis className="w-4 h-4" />,
     category: "Database",
   },
   {
@@ -113,18 +94,17 @@ const technologies = [
     icon: <SiMicrosoftazure className="w-4 h-4" />,
     category: "Cloud",
   },
+
+  // DevOps & Tools
   {
     name: "Docker",
     icon: <SiDocker className="w-4 h-4" />,
     category: "DevOps",
   },
   { name: "Git", icon: <SiGit className="w-4 h-4" />, category: "DevOps" },
+
+  // Design
   { name: "Figma", icon: <SiFigma className="w-4 h-4" />, category: "Design" },
-  {
-    name: "Adobe XD",
-    icon: <SiAdobexd className="w-4 h-4" />,
-    category: "Design",
-  },
   {
     name: "Photoshop",
     icon: <IconBrandAdobePhotoshop className="w-4 h-4" />,
