@@ -1,16 +1,28 @@
-"use client";
+"use client"
 
-import { Button } from "@nextui-org/button";
-import { IconView360 } from "@tabler/icons-react";
-import Link from "next/link";
-import { useEffect, useState } from "react";
+import Link from "next/link"
+import { useEffect, useState } from "react"
+import { ViewIcon as View360 } from "lucide-react"
+import { Button } from "@nextui-org/button"
 
 export default function Hero() {
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(false)
+  const [showAnime, setShowAnime] = useState(false)
+  const [isHovering, setIsHovering] = useState(false)
 
   useEffect(() => {
-    setLoaded(true);
-  }, []);
+    setLoaded(true)
+
+    // After initial load, wait 1.5 seconds and then switch to anime portrait
+    const timer = setTimeout(() => {
+      setShowAnime(true)
+    }, 1500)
+
+    return () => clearTimeout(timer)
+  }, [])
+
+  // Determine which portrait to show based on state
+  // const portraitToShow = isHovering || !showAnime ? "/my-portrait.jpg" : "/my-anime-portrait.png"
 
   return (
     <section className="w-full pb-10 bg-background">
@@ -42,9 +54,8 @@ export default function Hero() {
                 loaded ? "translate-y-0" : "translate-y-10"
               }`}
             >
-              I am a Software Engineer specializing in creating full-stack
-              mobile and web apps. With a passion for clean code and innovative
-              design, I turn ideas into reality in the world.
+              I am a Software Engineer specializing in creating full-stack mobile and web apps. With a passion for clean
+              code and innovative design, I turn ideas into reality in the world.
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Link
@@ -54,22 +65,41 @@ export default function Hero() {
               >
                 <Button className="inline-flex items-center justify-center transform transition-transform duration-500 hover:scale-105">
                   My Resume
-                  <IconView360 className="ml-2 h-4 w-4" />
+                  <View360 className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
             </div>
           </div>
-          <img
-            alt="Rafay Khan"
-            className={`mx-auto aspect-square overflow-hidden rounded-full object-cover object-center sm:w-full lg:order-last transform transition-transform duration-1000 ${
-              loaded ? "scale-100" : "scale-0"
-            }`}
-            height="550"
-            src="/me.png"
-            width="550"
-          />
+          <div
+            className="relative mx-auto aspect-square overflow-hidden rounded-full sm:w-full lg:order-last"
+            onMouseEnter={() => setIsHovering(true)}
+            onMouseLeave={() => setIsHovering(false)}
+          >
+            {/* Real portrait */}
+            <img
+              alt="Rafay Khan - Real"
+              className={`absolute inset-0 w-full h-full object-cover object-center transition-all duration-500 ease-in-out ${
+                isHovering || !showAnime ? "opacity-100 scale-100 rotate-0" : "opacity-0 scale-[1.02] rotate-1"
+              }`}
+              height="550"
+              src="/my-portrait.jpg"
+              width="550"
+            />
+
+            {/* Anime portrait */}
+            <img
+              alt="Rafay Khan - Anime"
+              className={`absolute inset-0 w-full h-full object-cover object-center transition-all duration-500 ease-in-out ${
+                !isHovering && showAnime ? "opacity-100 scale-100 rotate-0" : "opacity-0 scale-[0.98] rotate-[-1deg]"
+              }`}
+              height="550"
+              src="/my-anime-portrait.png"
+              width="550"
+            />
+          </div>
         </div>
       </div>
     </section>
-  );
+  )
 }
+
