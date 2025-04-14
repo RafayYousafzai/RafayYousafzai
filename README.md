@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Rafay Khan</h1>
+<h1 align="center">Hi 👋, I'm Rafay</h1>
 <h3 align="center">Software Engineer | Mobile App and Website Developer.</h3>
 
 I'm a 19-year-old developer from Pakistan 🇵🇰 with a deep focus on **React**, **Next.js**, and **mobile development** with **React Native**. I enjoy building modern web and mobile applications that solve real-world problems — with clean code, purposeful design, and clear impact.
