@@ -3,7 +3,6 @@
 
 I'm a 20-year-old developer from Pakistan 🇵🇰 with a deep focus on **React**, **Next.js**, and **mobile development** with **React Native**. I enjoy building modern web and mobile applications that solve real-world problems — with clean code, purposeful design, and clear impact.
 
-
 - 🔭 I’m currently working on [Direct Transport Solution](https://github.com/RafayYousafzai/n-Direct-Transport-Solution-Portal.git)
 
 - 👨‍💻 All of my projects are available at [https://rafaykhan.vercel.app/projects](https://rafaykhan.vercel.app/projects)
@@ -19,13 +18,11 @@ I'm a 20-year-old developer from Pakistan 🇵🇰 with a deep focus on **React*
 ### 💡 My Mindset
 
 > “Work hard, stay grateful, trust Allah.”  
-I strive to lead a life with **honor**, **purpose**, and **deep spiritual awareness**, using my blessings to uplift others and myself.  
-Discipline and self-awareness guide my journey in tech and beyond.
+> I strive to lead a life with **honor**, **purpose**, and **deep spiritual awareness**, using my blessings to uplift others and myself.  
+> Discipline and self-awareness guide my journey in tech and beyond.
 
 - 🧠 Self-improvement enthusiast — always pushing my limits in **discipline**, **spiritual growth**, and **critical thinking**
-  
 - 🧘 Practicing body language reading, lie detection, and lucid dreaming
-  
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
