@@ -6,11 +6,6 @@ import {
 } from "@nextui-org/navbar";
 import { Link } from "@nextui-org/link";
 import NextLink from "next/link";
-import {
-  IconBrandFiverr,
-  IconBrandLinkedin,
-  IconBrandUpwork,
-} from "@tabler/icons-react";
 
 import { GithubIcon } from "@/components/icons";
 import { siteConfig } from "@/config/site";
@@ -32,34 +27,6 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
-          <Link
-            isExternal
-            aria-label="Github"
-            href="https://github.com/RafayYousafzai"
-          >
-            <GithubIcon className="text-default-500" />
-          </Link>
-          <Link
-            isExternal
-            aria-label="Fiverr"
-            href="https://www.fiverr.com/rafay_yousafzai/"
-          >
-            <IconBrandFiverr className="text-default-500" />
-          </Link>
-          <Link
-            isExternal
-            aria-label="Linkedin"
-            href="https://www.linkedin.com/in/rafay-yousafzai-177568260/"
-          >
-            <IconBrandLinkedin className="text-default-500" />
-          </Link>
-          <Link
-            isExternal
-            aria-label="Upwork"
-            href="https://www.upwork.com/freelancers/~018bb05cec33b08ba4"
-          >
-            <IconBrandUpwork className="text-default-500" />
-          </Link>
           <ThemeSwitch />
         </NavbarItem>
       </NavbarContent>

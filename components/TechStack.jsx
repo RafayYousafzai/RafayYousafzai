@@ -18,7 +18,7 @@ export default function TechStack() {
   const filteredTech = technologies.filter(
     (tech) =>
       (filter === "All" || tech.category === filter) &&
-      tech.name.toLowerCase().includes(search.toLowerCase())
+      tech.name.toLowerCase().includes(search.toLowerCase()),
   );
 
   const categories = [
