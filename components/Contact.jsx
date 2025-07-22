@@ -68,9 +68,9 @@ export default function Contact() {
               {/* Left Column */}
               <div className="space-y-8">
                 <motion.div className="space-y-3" variants={childVariants}>
-                  <label className="text-sm font-medium text-neutral-700 dark:text-neutral-300">
+                  <p className="text-sm font-medium text-neutral-700 dark:text-neutral-300">
                     Full Name
-                  </label>
+                  </p>
                   <motion.div
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
@@ -89,9 +89,9 @@ export default function Contact() {
                 </motion.div>
 
                 <motion.div className="space-y-3" variants={childVariants}>
-                  <label className="text-sm font-medium text-neutral-700 dark:text-neutral-300">
+                  <p className="text-sm font-medium text-neutral-700 dark:text-neutral-300">
                     Email Address
-                  </label>
+                  </p>
                   <motion.div
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
@@ -111,9 +111,9 @@ export default function Contact() {
                 </motion.div>
 
                 <motion.div className="space-y-3" variants={childVariants}>
-                  <label className="text-sm font-medium text-neutral-700 dark:text-neutral-300">
+                  <p className="text-sm font-medium text-neutral-700 dark:text-neutral-300">
                     Subject
-                  </label>
+                  </p>
                   <motion.div
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
@@ -138,9 +138,9 @@ export default function Contact() {
                   className="space-y-3 h-full"
                   variants={childVariants}
                 >
-                  <label className="text-sm font-medium text-neutral-700 dark:text-neutral-300">
+                  <p className="text-sm font-medium text-neutral-700 dark:text-neutral-300">
                     Message
-                  </label>
+                  </p>
                   <motion.div
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
