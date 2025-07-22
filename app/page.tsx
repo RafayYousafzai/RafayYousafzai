@@ -13,29 +13,40 @@ export default function Page() {
         <BackgroundEffect />
       </div> */}
       <Hero />
-      <h1 className={title()}>Services</h1>
-      <Services />
+      <br />
+      <br />
+      <br />
+      <br />
       <h1 className={title()}>My Work</h1>
       <br />
       <br />
       <br />
       <br />
-
       <ExpandableCard />
       <br />
       <br />
       <br />
       <br />
+      <h1 className={title()}>Contact</h1>
+      <br />
+      <br />
+      <br />
+      <br />
+      <Contact />
+      <h1 className={title()}>Services</h1>
+      <br />
+      <br />
+      <Services />
       <h1 className={title()}>Blogs</h1>
+      <br />
+      <br />
+      <br />
+      <br />
       <BlogsCard />
       <br />
       <br />
       <br />
       <br />
-
-      <h1 className={title()}>Contact</h1>
-      <Contact />
-      {/* <PricingCards /> */}
     </div>
   );
 }

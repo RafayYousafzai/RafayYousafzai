@@ -93,37 +93,37 @@ export const siteConfig = {
     {
       title: "Full-Stack Web Development",
       description:
-        "Scalable and responsive web applications, delivering high-performance solutions.",
+        "I build complete web platforms — from clean, scalable frontends to powerful backend systems — tailored to your business goals.",
     },
     {
-      title: "Cross-Platform Mobile Development",
+      title: "Cross-Platform Mobile Apps",
       description:
-        "Cross-platform mobile apps developed with React Native and Supabase, providing a seamless user experience on both iOS and Android.",
+        "Using React Native and Supabase, I develop mobile apps that work seamlessly across iOS and Android — fast, reliable, and user-friendly.",
     },
     {
-      title: "Backend Integration",
+      title: "Backend & Database Integration",
       description:
-        "Robust backend solutions with, ensuring secure and efficient data handling.",
+        "I connect your app to secure, real-time databases and robust backend logic — so your data flows smoothly and stays protected.",
     },
     {
       title: "Custom API Development",
       description:
-        "Custom APIs tailored to your specific needs, enabling smooth integration and data flow between different systems.",
+        "Need to connect multiple systems or build your own API? I design and build custom APIs that power smooth integrations and automation.",
     },
     {
       title: "UI/UX Design",
       description:
-        "Intuitive and engaging user interfaces, ensuring a smooth and visually appealing experience across all devices.",
+        "I create intuitive interfaces that not only look great but also guide users effortlessly through your app or website.",
     },
     {
       title: "App Deployment & Hosting",
       description:
-        "Reliable app deployment and hosting on platforms like Firebase and Vercel, ensuring fast load times and minimal downtime.",
+        "From setup to launch, I handle deployment on platforms like Firebase, Vercel, or Supabase — ensuring speed, reliability, and zero stress.",
     },
     {
       title: "Performance Optimization",
       description:
-        "Optimization of applications for speed and efficiency, providing a fast and responsive user experience.",
+        "I audit and fine-tune your app for speed, load time, and responsiveness — so users stay engaged and your platform runs at its best.",
     },
   ],
   tiers: [
