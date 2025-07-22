@@ -190,7 +190,7 @@ export default function Hero() {
             >
               <h1 className="text-6xl sm:text-6xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
                 <span className="text-gray-900 dark:text-white/90">
-                  Hey, I'm{" "}
+                  Hey, I am{" "}
                   <span
                     className={`bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent ${!isMobile ? "animate-gradient" : ""}`}
                   >
@@ -323,7 +323,7 @@ export default function Hero() {
                   })}
             >
               <p className="text-gray-500 dark:text-white/50 mb-4 sm:mb-6 text-sm">
-                Let's connect and build something amazing
+                Lets connect and build something amazing
               </p>
               <div className="flex justify-center items-center gap-3 sm:gap-4">
                 {[
@@ -349,7 +349,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes gradient {
           0%,
           100% {
