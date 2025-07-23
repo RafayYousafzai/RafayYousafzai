@@ -15,14 +15,6 @@ I'm a 20-year-old developer from Pakistan 🇵🇰 with a deep focus on **React*
 
 - ⚡ Fun fact **I can deadlift 150kg but nearly passed out from jogging… turns out strength doesn’t guarantee cardio supremacy. 💀🏋️‍♂️**
 
-### 💡 My Mindset
-
-> “Work hard, stay grateful, trust Allah.”  
-> I strive to lead a life with **honor**, **purpose**, and **deep spiritual awareness**, using my blessings to uplift others and myself.  
-> Discipline and self-awareness guide my journey in tech and beyond.
-
-- 🧠 Self-improvement enthusiast — always pushing my limits in **discipline**, **spiritual growth**, and **critical thinking**
-- 🧘 Practicing body language reading, lie detection, and lucid dreaming
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
