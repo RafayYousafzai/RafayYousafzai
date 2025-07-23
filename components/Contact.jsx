@@ -44,7 +44,7 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen  ">
-      <div className="container mx-auto px-4 pb-16">
+      <div className="container mx-auto px-4">
         <div className=" mx-auto">
           <Card className=" shadow-none">
             <CardBody className="p-8 pt-0 lg:p-12">

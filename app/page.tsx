@@ -34,8 +34,6 @@ export default function Page() {
       <br />
       <Contact />
       <h1 className={title()}>Services</h1>
-      <br />
-      <br />
       <Services />
       <h1 className={title()}>Blogs</h1>
       <br />

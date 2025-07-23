@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect, useId, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Button, ButtonGroup } from "@nextui-org/button";
 import { IconBrandGoogleBigQuery } from "@tabler/icons-react";
@@ -57,14 +57,14 @@ export function ExpandableCard() {
       </AnimatePresence>
       <AnimatePresence>
         {active && typeof active === "object" ? (
-          <div className="fixed inset-0 grid place-items-center z-[100]">
+          <div className="fixed inset-0 grid place-items-center z-[100] p-4">
             <motion.button
               key={`button-${active.title}-${id}`}
               layout
               animate={{
                 opacity: 1,
               }}
-              className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
+              className="flex absolute top-6 right-6 lg:top-4 lg:right-4 items-center justify-center bg-white rounded-full h-8 w-8 shadow-lg z-10"
               exit={{
                 opacity: 0,
                 transition: {
@@ -80,30 +80,37 @@ export function ExpandableCard() {
             </motion.button>
             <motion.div
               ref={ref}
-              className="w-full max-w-[600px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-6xl h-full max-h-[90vh] flex flex-col lg:flex-row bg-white dark:bg-neutral-900 rounded-3xl overflow-hidden shadow-2xl"
               layoutId={`card-${active.title}-${id}`}
             >
-              <motion.div layoutId={`image-${active.title}-${id}`}>
+              {/* Image Section */}
+              <motion.div
+                layoutId={`image-${active.title}-${id}`}
+                className="lg:w-1/2 flex-shrink-0"
+              >
                 <Image
                   priority
                   alt={active.title}
-                  className="w-full  h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                  className="w-full h-64 lg:h-full lg:aspect-square rounded-t-3xl lg:rounded-l-3xl lg:rounded-tr-none object-cover object-center"
                   height={500}
                   src={active.coverPhotoUrl || "/placeholder.svg"}
                   width={500}
                 />
               </motion.div>
-              <div>
-                <div className="flex justify-between items-start p-6">
-                  <div className="">
+
+              {/* Content Section */}
+              <div className="lg:w-1/2 flex flex-col overflow-hidden">
+                {/* Header with title and buttons */}
+                <div className="flex justify-between items-start p-6 border-b border-neutral-200 dark:border-neutral-700 flex-shrink-0">
+                  <div className="flex-1 pr-4">
                     <motion.h3
-                      className="font-bold text-neutral-700 dark:text-neutral-200 text-xl"
+                      className="font-bold text-neutral-700 dark:text-neutral-200 text-xl lg:text-2xl"
                       layoutId={`title-${active.title}-${id}`}
                     >
                       {active.title}
                     </motion.h3>
                   </div>
-                  <motion.a layoutId={`button-${active.title}-${id}`}>
+                  <motion.div layoutId={`button-${active.title}-${id}`}>
                     <ButtonGroup>
                       <Button
                         isIconOnly
@@ -120,20 +127,24 @@ export function ExpandableCard() {
                         <IconBrandGoogleBigQuery />
                       </Button>
                     </ButtonGroup>
-                  </motion.a>
-                </div>
-                <div className="pt-4 relative px-6">
-                  <motion.div
-                    layout
-                    animate={{ opacity: 1 }}
-                    className="text-neutral-600 text-sm md:text-base lg:text-lg h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
-                    exit={{ opacity: 0 }}
-                    initial={{ opacity: 0 }}
-                  >
-                    {typeof active.content === "function"
-                      ? active.content()
-                      : active.description}
                   </motion.div>
+                </div>
+
+                {/* Scrollable Description */}
+                <div className="flex-1 overflow-y-auto">
+                  <div className="p-6">
+                    <motion.div
+                      layout
+                      animate={{ opacity: 1 }}
+                      className="text-neutral-600 dark:text-neutral-400 text-base lg:text-lg leading-relaxed"
+                      exit={{ opacity: 0 }}
+                      initial={{ opacity: 0 }}
+                    >
+                      {typeof active.content === "function"
+                        ? active.content()
+                        : active.description}
+                    </motion.div>
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -145,7 +156,7 @@ export function ExpandableCard() {
           projects.map((card) => (
             <motion.div
               key={`card-${card.title}-${id}`}
-              className="p-4  flex flex-col lg:flex-row w-full justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-2xl cursor-pointer shadow-sm hover:shadow-md transition-shadow"
+              className="p-4 flex flex-col lg:flex-row w-full justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-2xl cursor-pointer shadow-sm hover:shadow-md transition-shadow"
               layoutId={`card-${card.title}-${id}`}
               onClick={() => setActive(card)}
             >
@@ -156,7 +167,7 @@ export function ExpandableCard() {
                 >
                   <Image
                     alt={card.title}
-                    className="w-full  lg:w-48 lg:h-32 rounded-xl object-cover object-top"
+                    className="w-full lg:w-32 aspect-square rounded-xl object-cover object-center"
                     height={500}
                     src={card.coverPhotoUrl || "/placeholder.svg"}
                     width={500}
